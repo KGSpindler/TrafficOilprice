@@ -1,108 +1,108 @@
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:            log_traffic   R-squared:                       0.978
+Dep. Variable:            log_traffic   R-squared:                       0.977
 Model:                            OLS   Adj. R-squared:                  0.977
-Method:                 Least Squares   F-statistic:                -2.379e+05
-Date:                Thu, 23 Apr 2026   Prob (F-statistic):               1.00
-Time:                        19:40:21   Log-Likelihood:                 23815.
-No. Observations:               66005   AIC:                        -4.747e+04
-Df Residuals:                   65924   BIC:                        -4.673e+04
-Df Model:                          80                                         
+Method:                 Least Squares   F-statistic:                 5.387e+05
+Date:                Thu, 23 Apr 2026   Prob (F-statistic):          1.55e-179
+Time:                        20:57:22   Log-Likelihood:                 18587.
+No. Observations:               53053   AIC:                        -3.701e+04
+Df Residuals:                   52973   BIC:                        -3.630e+04
+Df Model:                          79                                         
 Covariance Type:              cluster                                         
 =====================================================================================================================================================
                                                                                         coef    std err          z      P>|z|      [0.025      0.975]
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-Intercept                                                                            10.3896      0.362     28.690      0.000       9.680      11.099
-C(weekday)[T.1]                                                                       0.0200      0.007      2.977      0.003       0.007       0.033
-C(weekday)[T.2]                                                                       0.0218      0.009      2.528      0.011       0.005       0.039
-C(weekday)[T.3]                                                                       0.0311      0.010      3.124      0.002       0.012       0.051
-C(weekday)[T.4]                                                                       0.0533      0.008      6.555      0.000       0.037       0.069
-C(weekday)[T.5]                                                                      -0.2514      0.019    -13.056      0.000      -0.289      -0.214
-C(weekday)[T.6]                                                                      -0.3559      0.021    -17.121      0.000      -0.397      -0.315
-C(road_site_id)[T.101 1011492-0 1/ 124 -||Ellebjergvej||720881||6172777]              0.0162        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1011492-0 1/ 124 T||Ellebjergvej||720881||6172777]              0.7024        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1011600-0 2/ 400 +||Englandsvej||726552||6171708]              -1.0414      0.003   -323.287      0.000      -1.048      -1.035
-C(road_site_id)[T.101 1011600-0 2/ 400 -||Englandsvej||726552||6171708]              -0.7786      0.003   -236.249      0.000      -0.785      -0.772
-C(road_site_id)[T.101 1011600-0 2/ 400 T||Englandsvej||726552||6171708]              -0.2042      0.003    -62.134      0.000      -0.211      -0.198
-C(road_site_id)[T.101 1011908-0 0/ 66 +||Fredensbro||724290||6177606]                 0.0786        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1011908-0 0/ 66 -||Fredensbro||724290||6177606]                 0.1178        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1011908-0 0/ 66 T||Fredensbro||724290||6177606]                 0.7767        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1011964-0 0/ 200 +||Frederikssundsvej||722023||6178546]        -0.8329      0.002   -393.326      0.000      -0.837      -0.829
-C(road_site_id)[T.101 1011964-0 0/ 200 -||Frederikssundsvej||722023||6178546]        -0.6947      0.001   -467.826      0.000      -0.698      -0.692
-C(road_site_id)[T.101 1011964-0 0/ 200 T||Frederikssundsvej||722023||6178546]        -0.0681      0.002    -37.839      0.000      -0.072      -0.065
-C(road_site_id)[T.101 1012068-0 0/ 299 +||Gadelandet||718787||6179412]               -1.7367        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1012068-0 0/ 299 -||Gadelandet||718787||6179412]               -1.6860        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1012068-0 0/ 299 T||Gadelandet||718787||6179412]               -1.0178        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1012890-0 6/ 560 +||Hareskovvej||719487||6180473]               0.2340      0.009     24.986      0.000       0.216       0.252
-C(road_site_id)[T.101 1012890-0 6/ 560 -||Hareskovvej||719487||6180473]              -0.2366      0.013    -17.862      0.000      -0.263      -0.211
-C(road_site_id)[T.101 1012890-0 6/ 560 T||Hareskovvej||719487||6180473]               0.7132      0.013     54.166      0.000       0.687       0.739
-C(road_site_id)[T.101 1013300-0 0/ 50 +||Islands Brygge||725115||6175120]            -3.0469        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1013300-0 0/ 50 -||Islands Brygge||725115||6175120]            -1.7078        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1013300-0 0/ 50 T||Islands Brygge||725115||6175120]            -1.4703        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1013332-0 0/ 781 +||Jagtvej||722980||6177692]                  -0.5576      0.007    -80.216      0.000      -0.571      -0.544
-C(road_site_id)[T.101 1013332-0 0/ 781 -||Jagtvej||722980||6177692]                  -0.5073      0.007    -76.481      0.000      -0.520      -0.494
-C(road_site_id)[T.101 1013332-0 0/ 781 T||Jagtvej||722980||6177692]                   0.1494      0.007     21.209      0.000       0.136       0.163
-C(road_site_id)[T.101 1013516-0 0/ 194 +||Kalkbrænderihavnsgade||725807||6177949]    -0.7972      0.007   -116.642      0.000      -0.811      -0.784
-C(road_site_id)[T.101 1013516-0 0/ 194 -||Kalkbrænderihavnsgade||725807||6177949]    -0.8345      0.007   -122.191      0.000      -0.848      -0.821
-C(road_site_id)[T.101 1013516-0 0/ 194 T||Kalkbrænderihavnsgade||725807||6177949]    -0.1279      0.007    -18.418      0.000      -0.142      -0.114
-C(road_site_id)[T.101 1013520-0 0/ 562 +||Kalvebod Brygge||724562||6174877]          -0.0289        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1013520-0 0/ 562 -||Kalvebod Brygge||724562||6174877]          -0.0009        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1013520-0 0/ 562 T||Kalvebod Brygge||724562||6174877]           0.6787        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1014796-0 0/ 147 +||Molbechsvej||721336||6174101]              -2.0858        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1014796-0 0/ 147 -||Molbechsvej||721336||6174101]              -3.0157        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1014796-0 0/ 147 T||Molbechsvej||721336||6174101]              -1.7485        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1014844-0 0/ 156 +||Mozartsvej||722115||6172593]               -2.2442        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1014844-0 0/ 156 -||Mozartsvej||722115||6172593]               -2.2817        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1014844-0 0/ 156 T||Mozartsvej||722115||6172593]               -1.5697        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1015968-0 1/ 61 +1||Roskildevej||718730||6175142]              -0.4117      0.001   -425.725      0.000      -0.414      -0.410
-C(road_site_id)[T.101 1015968-0 1/ 61 +2||Roskildevej||718730||6175142]              -0.9000      0.001  -1028.192      0.000      -0.902      -0.898
-C(road_site_id)[T.101 1015968-0 1/ 61 +||Roskildevej||718730||6175142]                0.0603      0.001     46.647      0.000       0.058       0.063
-C(road_site_id)[T.101 1015968-0 1/ 61 -1||Roskildevej||718730||6175142]              -0.6250      0.001  -1078.876      0.000      -0.626      -0.624
-C(road_site_id)[T.101 1015968-0 1/ 61 -2||Roskildevej||718730||6175142]              -0.6164      0.002   -374.025      0.000      -0.620      -0.613
-C(road_site_id)[T.101 1015968-0 1/ 61 -||Roskildevej||718730||6175142]                0.0737      0.001     61.046      0.000       0.071       0.076
-C(road_site_id)[T.101 1015968-0 1/ 61 T||Roskildevej||718730||6175142]                0.7617      0.001    668.171      0.000       0.759       0.764
-C(road_site_id)[T.101 1016264-0 0/ 248 +||Skt. Kjelds Gade||724059||6179474]         -3.5089        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1016264-0 0/ 248 -||Skt. Kjelds Gade||724059||6179474]         -3.3596        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1016264-0 0/ 248 T||Skt. Kjelds Gade||724059||6179474]         -2.7368        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1017280-0 0/ 332 +||Sølvgade||725098||6177029]                 -1.2014      0.001   -848.820      0.000      -1.204      -1.199
-C(road_site_id)[T.101 1017280-0 0/ 332 -||Sølvgade||725098||6177029]                 -0.7369      0.002   -427.610      0.000      -0.740      -0.734
-C(road_site_id)[T.101 1017280-0 0/ 332 T||Sølvgade||725098||6177029]                 -0.2479      0.002   -157.628      0.000      -0.251      -0.245
-C(road_site_id)[T.101 1017592-0 0/ 635 +||Torvegade||726066||6175240]                -0.1886        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1017592-0 0/ 635 -||Torvegade||726066||6175240]                -0.2125        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1017592-0 0/ 635 T||Torvegade||726066||6175240]                 0.4928        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1017684-0 1/ 651 +||Tuborgvej||722325||6180411]                -0.2773      0.002   -156.675      0.000      -0.281      -0.274
-C(road_site_id)[T.101 1017684-0 1/ 651 -||Tuborgvej||722325||6180411]                -0.2411      0.002   -134.039      0.000      -0.245      -0.238
-C(road_site_id)[T.101 1017684-0 1/ 651 T||Tuborgvej||722325||6180411]                 0.4343      0.002    242.646      0.000       0.431       0.438
-C(road_site_id)[T.101 1018128-0 3/ 215 +||Vejlands Alle´||724365||6171942]           -0.2330        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1018128-0 3/ 215 -||Vejlands Alle´||724365||6171942]           -0.8858        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1018128-0 3/ 215 T||Vejlands Alle´||724365||6171942]            0.2057        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1018308-0 1/ 516 +||Vigerslev Allé||721273||6174037]           -0.5536      0.003   -182.050      0.000      -0.560      -0.548
-C(road_site_id)[T.101 1018308-0 1/ 516 -||Vigerslev Allé||721273||6174037]           -0.5132      0.003   -192.809      0.000      -0.518      -0.508
-C(road_site_id)[T.101 1018308-0 1/ 516 T||Vigerslev Allé||721273||6174037]            0.1649      0.003     56.545      0.000       0.159       0.171
-C(road_site_id)[T.101 1018404-0 0/ 349 +||Wittenberggade||727197||6174356]           -1.9017        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1018404-0 0/ 349 -||Wittenberggade||727197||6174356]           -2.0234        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1018404-0 0/ 349 T||Wittenberggade||727197||6174356]           -1.2669        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1018541-0 3/ 638 +||Ørestads Boulevard||725458||6171542]       -1.4520        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1018541-0 3/ 638 -||Ørestads Boulevard||725458||6171542]       -1.3563        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1018541-0 3/ 638 T||Ørestads Boulevard||725458||6171542]       -0.7096        nan        nan        nan         nan         nan
-C(road_site_id)[T.101 1018636-0 0/ 180 +||Åboulevard||723530||6176573]                0.1748      0.015     11.847      0.000       0.146       0.204
-C(road_site_id)[T.101 1018636-0 0/ 180 -||Åboulevard||723530||6176573]                0.1701      0.015     11.370      0.000       0.141       0.199
-C(road_site_id)[T.101 1018636-0 0/ 180 T||Åboulevard||723530||6176573]                0.8656      0.015     58.276      0.000       0.837       0.895
-log_real_gasoline_price                                                              -0.9141      0.169     -5.400      0.000      -1.246      -0.582
-log_real_gas_lag7                                                                     0.7000      0.189      3.697      0.000       0.329       1.071
-rain_mm_day                                                                        5.581e-05      0.000      0.170      0.865      -0.001       0.001
-t                                                                                  2.558e-05   5.31e-05      0.482      0.630   -7.85e-05       0.000
-I(t ** 2)                                                                         -2.447e-08   3.55e-08     -0.688      0.491   -9.41e-08    4.52e-08
+Intercept                                                                            10.9963      0.344     31.953      0.000      10.322      11.671
+C(weekday)[T.1]                                                                       0.0179      0.008      2.219      0.026       0.002       0.034
+C(weekday)[T.2]                                                                       0.0216      0.010      2.201      0.028       0.002       0.041
+C(weekday)[T.3]                                                                       0.0307      0.011      2.678      0.007       0.008       0.053
+C(weekday)[T.4]                                                                       0.0515      0.009      5.721      0.000       0.034       0.069
+C(weekday)[T.5]                                                                      -0.2522      0.020    -12.888      0.000      -0.291      -0.214
+C(weekday)[T.6]                                                                      -0.3572      0.021    -16.896      0.000      -0.399      -0.316
+C(road_site_id)[T.101 1011492-0 1/ 124 -||Ellebjergvej||720881||6172777]              0.0195        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1011492-0 1/ 124 T||Ellebjergvej||720881||6172777]              0.7043        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1011600-0 2/ 400 +||Englandsvej||726552||6171708]              -1.0408        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1011600-0 2/ 400 -||Englandsvej||726552||6171708]              -0.7780        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1011600-0 2/ 400 T||Englandsvej||726552||6171708]              -0.2036        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1011908-0 0/ 66 +||Fredensbro||724290||6177606]                 0.0796        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1011908-0 0/ 66 -||Fredensbro||724290||6177606]                 0.1347        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1011908-0 0/ 66 T||Fredensbro||724290||6177606]                 0.8011        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1011964-0 0/ 200 +||Frederikssundsvej||722023||6178546]        -0.8102      0.003   -310.315      0.000      -0.815      -0.805
+C(road_site_id)[T.101 1011964-0 0/ 200 -||Frederikssundsvej||722023||6178546]        -0.6769      0.002   -358.647      0.000      -0.681      -0.673
+C(road_site_id)[T.101 1011964-0 0/ 200 T||Frederikssundsvej||722023||6178546]        -0.0482      0.002    -21.449      0.000      -0.053      -0.044
+C(road_site_id)[T.101 1012068-0 0/ 299 +||Gadelandet||718787||6179412]               -1.7402        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1012068-0 0/ 299 -||Gadelandet||718787||6179412]               -1.6989        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1012068-0 0/ 299 T||Gadelandet||718787||6179412]               -1.0259        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1012890-0 6/ 560 +||Hareskovvej||719487||6180473]               0.2362      0.008     30.656      0.000       0.221       0.251
+C(road_site_id)[T.101 1012890-0 6/ 560 -||Hareskovvej||719487||6180473]              -0.2268      0.013    -16.923      0.000      -0.253      -0.201
+C(road_site_id)[T.101 1012890-0 6/ 560 T||Hareskovvej||719487||6180473]               0.7231      0.013     55.132      0.000       0.697       0.749
+C(road_site_id)[T.101 1013300-0 0/ 50 +||Islands Brygge||725115||6175120]            -3.0111        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1013300-0 0/ 50 -||Islands Brygge||725115||6175120]            -1.6932        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1013300-0 0/ 50 T||Islands Brygge||725115||6175120]            -1.4502        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1013332-0 0/ 781 +||Jagtvej||722980||6177692]                  -0.5542      0.005   -109.019      0.000      -0.564      -0.544
+C(road_site_id)[T.101 1013332-0 0/ 781 -||Jagtvej||722980||6177692]                  -0.5041      0.005   -107.485      0.000      -0.513      -0.495
+C(road_site_id)[T.101 1013332-0 0/ 781 T||Jagtvej||722980||6177692]                   0.1528      0.005     29.609      0.000       0.143       0.163
+C(road_site_id)[T.101 1013516-0 0/ 194 +||Kalkbrænderihavnsgade||725807||6177949]    -0.7954      0.004   -227.229      0.000      -0.802      -0.788
+C(road_site_id)[T.101 1013516-0 0/ 194 -||Kalkbrænderihavnsgade||725807||6177949]    -0.8328      0.003   -247.728      0.000      -0.839      -0.826
+C(road_site_id)[T.101 1013516-0 0/ 194 T||Kalkbrænderihavnsgade||725807||6177949]    -0.1263      0.004    -34.270      0.000      -0.133      -0.119
+C(road_site_id)[T.101 1013520-0 0/ 562 +||Kalvebod Brygge||724562||6174877]          -0.0431        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1013520-0 0/ 562 -||Kalvebod Brygge||724562||6174877]          -0.0032        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1013520-0 0/ 562 T||Kalvebod Brygge||724562||6174877]           0.6707        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1014796-0 0/ 147 +||Molbechsvej||721336||6174101]              -2.1204        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1014796-0 0/ 147 -||Molbechsvej||721336||6174101]              -3.0090        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1014796-0 0/ 147 T||Molbechsvej||721336||6174101]              -1.7714        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1014844-0 0/ 156 +||Mozartsvej||722115||6172593]               -2.2368        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1014844-0 0/ 156 -||Mozartsvej||722115||6172593]               -2.2757        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1014844-0 0/ 156 T||Mozartsvej||722115||6172593]               -1.5630        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1015968-0 1/ 61 +1||Roskildevej||718730||6175142]              -0.4098        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1015968-0 1/ 61 +2||Roskildevej||718730||6175142]              -0.8993        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1015968-0 1/ 61 +||Roskildevej||718730||6175142]                0.0614        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1015968-0 1/ 61 -1||Roskildevej||718730||6175142]              -0.6226        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1015968-0 1/ 61 -2||Roskildevej||718730||6175142]              -0.6157        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1015968-0 1/ 61 -||Roskildevej||718730||6175142]                0.0752        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1015968-0 1/ 61 T||Roskildevej||718730||6175142]                0.7631        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1016264-0 0/ 248 +||Skt. Kjelds Gade||724059||6179474]         -3.5388        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1016264-0 0/ 248 -||Skt. Kjelds Gade||724059||6179474]         -3.4013        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1016264-0 0/ 248 T||Skt. Kjelds Gade||724059||6179474]         -2.7731        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1017280-0 0/ 332 +||Sølvgade||725098||6177029]                 -1.1995        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1017280-0 0/ 332 -||Sølvgade||725098||6177029]                 -0.7350        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1017280-0 0/ 332 T||Sølvgade||725098||6177029]                 -0.2461        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1017592-0 0/ 635 +||Torvegade||726066||6175240]                -0.1760        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1017592-0 0/ 635 -||Torvegade||726066||6175240]                -0.1956        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1017592-0 0/ 635 T||Torvegade||726066||6175240]                 0.5076        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1017684-0 1/ 651 +||Tuborgvej||722325||6180411]                -0.2761        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1017684-0 1/ 651 -||Tuborgvej||722325||6180411]                -0.2399        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1017684-0 1/ 651 T||Tuborgvej||722325||6180411]                 0.4355        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1018128-0 3/ 215 +||Vejlands Alle´||724365||6171942]           -0.2285        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1018128-0 3/ 215 -||Vejlands Alle´||724365||6171942]           -0.8256        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1018128-0 3/ 215 T||Vejlands Alle´||724365||6171942]            0.2311        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1018308-0 1/ 516 +||Vigerslev Allé||721273||6174037]           -0.5459      0.002   -291.581      0.000      -0.550      -0.542
+C(road_site_id)[T.101 1018308-0 1/ 516 -||Vigerslev Allé||721273||6174037]           -0.5170        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1018308-0 1/ 516 T||Vigerslev Allé||721273||6174037]            0.1694      0.001    118.143      0.000       0.167       0.172
+C(road_site_id)[T.101 1018404-0 0/ 349 +||Wittenberggade||727197||6174356]           -1.8813        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1018404-0 0/ 349 -||Wittenberggade||727197||6174356]           -2.0104        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1018404-0 0/ 349 T||Wittenberggade||727197||6174356]           -1.2499        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1018541-0 3/ 638 +||Ørestads Boulevard||725458||6171542]       -1.4631        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1018541-0 3/ 638 -||Ørestads Boulevard||725458||6171542]       -1.3850        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1018541-0 3/ 638 T||Ørestads Boulevard||725458||6171542]       -0.7298        nan        nan        nan         nan         nan
+C(road_site_id)[T.101 1018636-0 0/ 180 +||Åboulevard||723530||6176573]                0.1837      0.015     12.417      0.000       0.155       0.213
+C(road_site_id)[T.101 1018636-0 0/ 180 -||Åboulevard||723530||6176573]                0.1791      0.015     11.902      0.000       0.150       0.209
+C(road_site_id)[T.101 1018636-0 0/ 180 T||Åboulevard||723530||6176573]                0.8746      0.015     58.616      0.000       0.845       0.904
+log_real_gasoline_price                                                              -1.1792      0.194     -6.087      0.000      -1.559      -0.799
+log_real_gas_lag7                                                                     0.7373      0.194      3.798      0.000       0.357       1.118
+rain_mm_day                                                                       -1.529e-19        nan        nan        nan         nan         nan
+t                                                                                     0.0001    7.1e-05      1.995      0.046    2.52e-06       0.000
+I(t ** 2)                                                                         -1.339e-07   5.62e-08     -2.384      0.017   -2.44e-07   -2.38e-08
 ==============================================================================
-Omnibus:                    21096.223   Durbin-Watson:                   1.663
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):           718909.474
-Skew:                          -0.889   Prob(JB):                         0.00
-Kurtosis:                      19.070   Cond. No.                     9.60e+07
+Omnibus:                    15399.454   Durbin-Watson:                   1.647
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           369341.436
+Skew:                          -0.850   Prob(JB):                         0.00
+Kurtosis:                      15.814   Cond. No.                     1.34e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors are robust to cluster correlation (cluster)
-[2] The condition number is large, 9.6e+07. This might indicate that there are
-strong multicollinearity or other numerical problems.
+[2] The smallest eigenvalue is 8.39e-17. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
 
-Note: covariance matrix has non-positive diagonal entries for 35 coefficients; some coefficient-level SEs may be undefined.
+Note: covariance matrix has non-positive diagonal entries for 53 coefficients; some coefficient-level SEs may be undefined.

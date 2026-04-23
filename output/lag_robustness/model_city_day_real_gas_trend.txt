@@ -1,36 +1,36 @@
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:      log_traffic_total   R-squared:                       0.623
-Model:                            OLS   Adj. R-squared:                  0.620
-Method:                 Least Squares   F-statistic:                     320.2
-Date:                Thu, 23 Apr 2026   Prob (F-statistic):               0.00
-Time:                        19:40:23   Log-Likelihood:                 232.51
-No. Observations:                1390   AIC:                            -443.0
-Df Residuals:                    1379   BIC:                            -385.4
-Df Model:                          10                                         
+Dep. Variable:      log_traffic_total   R-squared:                       0.381
+Model:                            OLS   Adj. R-squared:                  0.375
+Method:                 Least Squares   F-statistic:                     76.82
+Date:                Thu, 23 Apr 2026   Prob (F-statistic):          1.30e-108
+Time:                        20:57:24   Log-Likelihood:                 239.92
+No. Observations:                1043   AIC:                            -459.8
+Df Residuals:                    1033   BIC:                            -410.3
+Df Model:                           9                                         
 Covariance Type:                  HC1                                         
 ===========================================================================================
                               coef    std err          z      P>|z|      [0.025      0.975]
 -------------------------------------------------------------------------------------------
-Intercept                  15.1117      0.629     24.012      0.000      13.878      16.345
-C(weekday)[T.1]             0.0129      0.019      0.667      0.505      -0.025       0.051
-C(weekday)[T.2]             0.0239      0.020      1.198      0.231      -0.015       0.063
-C(weekday)[T.3]             0.0400      0.020      2.004      0.045       0.001       0.079
-C(weekday)[T.4]             0.0537      0.020      2.727      0.006       0.015       0.092
-C(weekday)[T.5]            -0.2368      0.020    -12.135      0.000      -0.275      -0.199
-C(weekday)[T.6]            -0.3298      0.019    -17.029      0.000      -0.368      -0.292
-log_real_gasoline_price    -0.7031      0.234     -3.004      0.003      -1.162      -0.244
-rain_mm_day                 0.0011      0.000      2.432      0.015       0.000       0.002
-t                           0.0009   8.28e-05     11.101      0.000       0.001       0.001
-I(t ** 2)               -9.255e-07   5.65e-08    -16.379      0.000   -1.04e-06   -8.15e-07
+Intercept                  14.9575      0.762     19.622      0.000      13.463      16.452
+C(weekday)[T.1]             0.0202      0.023      0.900      0.368      -0.024       0.064
+C(weekday)[T.2]             0.0341      0.023      1.504      0.133      -0.010       0.079
+C(weekday)[T.3]             0.0486      0.023      2.112      0.035       0.004       0.094
+C(weekday)[T.4]             0.0569      0.023      2.515      0.012       0.013       0.101
+C(weekday)[T.5]            -0.2340      0.022    -10.592      0.000      -0.277      -0.191
+C(weekday)[T.6]            -0.3274      0.022    -14.853      0.000      -0.371      -0.284
+log_real_gasoline_price    -0.6225      0.287     -2.170      0.030      -1.185      -0.060
+rain_mm_day              3.245e-17   2.61e-18     12.451      0.000    2.73e-17    3.76e-17
+t                           0.0005      0.000      3.534      0.000       0.000       0.001
+I(t ** 2)               -4.763e-07   1.12e-07     -4.239      0.000   -6.97e-07   -2.56e-07
 ==============================================================================
-Omnibus:                     1283.435   Durbin-Watson:                   0.286
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):            50748.986
-Skew:                          -4.285   Prob(JB):                         0.00
-Kurtosis:                      31.334   Cond. No.                     9.85e+07
+Omnibus:                      954.849   Durbin-Watson:                   0.264
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            35177.725
+Skew:                          -4.183   Prob(JB):                         0.00
+Kurtosis:                      30.193   Cond. No.                     8.42e+22
 ==============================================================================
 
 Notes:
 [1] Standard Errors are heteroscedasticity robust (HC1)
-[2] The condition number is large, 9.85e+07. This might indicate that there are
-strong multicollinearity or other numerical problems.
+[2] The smallest eigenvalue is 4.25e-32. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.

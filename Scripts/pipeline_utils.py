@@ -34,10 +34,10 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 CACHE_DIR = PROJECT_ROOT / "cache"
 CACHE_DIR.mkdir(exist_ok=True)
 
-HOLIDAY_CACHE_FILE = CACHE_DIR / "holiday_calendar_2011_2014.csv"
+HOLIDAY_CACHE_FILE = CACHE_DIR / "holiday_calendar_2011_2013.csv"
 STATIONS_CACHE_FILE = CACHE_DIR / "dmi_precip_stations.csv"
 SITE_STATION_CACHE_FILE = CACHE_DIR / "site_station_matches.csv"
-DAILY_RAIN_CACHE_FILE = CACHE_DIR / "daily_rain_by_station_2011_2014.csv"
+DAILY_RAIN_CACHE_FILE = CACHE_DIR / "daily_rain_by_station_2011_2013.csv"
 
 ANALYSIS_PANEL_FILE = OUTPUT_DIR / "analysis_panel_daily.csv"
 
@@ -45,7 +45,7 @@ DMI_CLIMATE_STATIONS_URL = "https://opendataapi.dmi.dk/v2/climateData/collection
 DMI_CLIMATE_VALUES_URL = "https://opendataapi.dmi.dk/v2/climateData/collections/stationValue/items"
 
 ANALYSIS_START = "2011-01-01"
-ANALYSIS_END = "2014-12-31"
+ANALYSIS_END = "2013-12-31"
 
 DK_BBOX = "7,54,16,58"
 RAIN_PARAMETER_ID = "acc_precip"
@@ -485,10 +485,13 @@ def fetch_daily_weather_for_needed_stations(station_ids: list[str], start_dt: pd
         df = fetch_station_daily_precip(str(sid), start_dt, end_dt)
         if not df.empty:
             parts.append(df)
-    return pd.concat(parts, ignore_index=True) if parts else pd.DataFrame()
+    if parts:
+        return pd.concat(parts, ignore_index=True)
+    return pd.DataFrame(columns=["station_id", "date", "rain_mm_day", "rained_day", "qc_status", "validity"])
 
 
 def get_or_create_daily_rain(station_ids: list[str], start_dt: pd.Timestamp, end_dt: pd.Timestamp) -> pd.DataFrame:
+    required_cols = ["station_id", "date", "rain_mm_day", "rained_day", "qc_status", "validity"]
     station_ids = extract_valid_station_ids(station_ids)
     start_dt = pd.to_datetime(start_dt).normalize()
     end_dt = pd.to_datetime(end_dt).normalize()
@@ -499,12 +502,14 @@ def get_or_create_daily_rain(station_ids: list[str], start_dt: pd.Timestamp, end
         except EmptyDataError:
             rain = pd.DataFrame()
 
-        required_cols = {"station_id", "date", "rain_mm_day", "rained_day"}
-        if rain.empty or not required_cols.issubset(set(rain.columns)):
+        required_core_cols = {"station_id", "date", "rain_mm_day", "rained_day"}
+        if rain.empty or not required_core_cols.issubset(set(rain.columns)):
             rain = fetch_daily_weather_for_needed_stations(station_ids, start_dt, end_dt)
             if not rain.empty:
                 rain["station_id"] = rain["station_id"].astype(str)
                 rain["date"] = pd.to_datetime(rain["date"]).dt.normalize()
+            else:
+                rain = pd.DataFrame(columns=required_cols)
             rain.to_csv(DAILY_RAIN_CACHE_FILE, index=False)
             return rain
 
@@ -539,6 +544,8 @@ def get_or_create_daily_rain(station_ids: list[str], start_dt: pd.Timestamp, end
     if not rain.empty:
         rain["station_id"] = rain["station_id"].astype(str)
         rain["date"] = pd.to_datetime(rain["date"]).dt.normalize()
+    else:
+        rain = pd.DataFrame(columns=required_cols)
     rain.to_csv(DAILY_RAIN_CACHE_FILE, index=False)
     return rain
 

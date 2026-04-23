@@ -46,6 +46,7 @@ def main() -> None:
         start_dt=traffic["date"].min(),
         end_dt=traffic["date"].max(),
     )
+    rain = rain.reindex(columns=["station_id", "date", "rain_mm_day", "rained_day"])
 
     print("Loading fuel prices and CPI...")
     fuel = load_fuel_data()
