@@ -1,0 +1,7 @@
+key,label,description
+MA7,7-day moving average,The average value over the current day and the previous 6 days. Used to smooth short-run noise and capture delayed responses.
+MA14,14-day moving average,The average value over the current day and the previous 13 days.
+MA30,30-day moving average,The average value over the current day and the previous 29 days.
+lag1,1-day lag,Yesterday's value.
+lag7,7-day lag,The value from 7 days earlier.
+lead7,7-day lead/placebo,The value 7 days in the future; used as a placebo check.

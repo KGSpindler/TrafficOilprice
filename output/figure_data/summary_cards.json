@@ -1,0 +1,14 @@
+{
+  "n_observations": 66419,
+  "n_sites": 70,
+  "start_date": "2011-01-02",
+  "end_date": "2014-12-31",
+  "mean_daily_traffic": 11080.734774687966,
+  "median_daily_traffic": 8492.0,
+  "mean_rain_mm": 1.9142067781809422,
+  "share_rainy_days": 0.49988708050407266,
+  "mean_gasoline_price": 12.684455502190637,
+  "mean_real_gasoline_price": 15.660325485918795,
+  "mean_diesel_price": 11.3340230958009,
+  "mean_real_diesel_price": 13.994626278961485
+}

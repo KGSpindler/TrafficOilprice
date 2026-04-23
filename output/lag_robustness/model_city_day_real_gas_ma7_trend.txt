@@ -1,0 +1,36 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      log_traffic_total   R-squared:                       0.622
+Model:                            OLS   Adj. R-squared:                  0.620
+Method:                 Least Squares   F-statistic:                     312.3
+Date:                Thu, 23 Apr 2026   Prob (F-statistic):               0.00
+Time:                        19:40:23   Log-Likelihood:                 230.46
+No. Observations:                1384   AIC:                            -438.9
+Df Residuals:                    1373   BIC:                            -381.4
+Df Model:                          10                                         
+Covariance Type:                  HC1                                         
+====================================================================================
+                       coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------
+Intercept           15.0234      0.627     23.978      0.000      13.795      16.251
+C(weekday)[T.1]      0.0126      0.019      0.651      0.515      -0.025       0.051
+C(weekday)[T.2]      0.0239      0.020      1.195      0.232      -0.015       0.063
+C(weekday)[T.3]      0.0408      0.020      2.037      0.042       0.002       0.080
+C(weekday)[T.4]      0.0535      0.020      2.718      0.007       0.015       0.092
+C(weekday)[T.5]     -0.2363      0.020    -12.082      0.000      -0.275      -0.198
+C(weekday)[T.6]     -0.3293      0.019    -16.919      0.000      -0.367      -0.291
+log_real_gas_ma7    -0.6730      0.234     -2.879      0.004      -1.131      -0.215
+rain_mm_day          0.0011      0.000      2.425      0.015       0.000       0.002
+t                    0.0009    8.5e-05     10.935      0.000       0.001       0.001
+I(t ** 2)         -9.29e-07   5.69e-08    -16.321      0.000   -1.04e-06   -8.17e-07
+==============================================================================
+Omnibus:                     1281.031   Durbin-Watson:                   0.286
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            50940.337
+Skew:                          -4.299   Prob(JB):                         0.00
+Kurtosis:                      31.451   Cond. No.                     1.02e+08
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)
+[2] The condition number is large, 1.02e+08. This might indicate that there are
+strong multicollinearity or other numerical problems.

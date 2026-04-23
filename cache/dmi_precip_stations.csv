@@ -1,0 +1,139 @@
+station_id,station_name,station_type,station_status,station_lon,station_lat
+05005,Uggerby,Pluvio,Active,10.1074,57.5705
+05009,Nørre Lyngby N,Pluvio,Active,9.7607,57.4185
+05015,Lendum,Pluvio,Active,10.2704,57.4029
+05031,Byrum,Pluvio,Active,11.0292,57.2746
+05035,Voerså Hede,Pluvio,Active,10.471,57.2215
+05042,Møllegård Huse,Pluvio,Active,10.2232,56.9564
+05065,Mørkeskov,Pluvio,Active,9.8247,56.8136
+05070,Havnø,Pluvio,Active,10.1644,56.7157
+05075,Hørby,Pluvio,Active,9.7204,56.6646
+05081,Gatten,Pluvio,Active,9.4041,56.879
+05085,Aggersund,Pluvio,Active,9.2889,57.0143
+05089,Lild Strand,Pluvio,Active,8.9649,57.1518
+05095,Nørre Vorupør,Pluvio,Active,8.3774,56.9514
+05105,Erslev,Pluvio,Active,8.7296,56.8334
+05109,Junget,Pluvio,Active,9.0945,56.7637
+05135,Grønbæk,Pluvio,Active,9.6213,56.2763
+05140,Hald,Pluvio,Active,10.1004,56.5665
+05150,Hevringholm,Pluvio,Active,10.4403,56.5062
+05160,Sibirien,Pluvio,Active,10.5466,56.1103
+05165,Tranebjerg Øst,Pluvio,Active,10.6185,55.8322
+05169,Hov,Pluvio,Active,10.2535,55.9126
+05185,Flensted,Pluvio,Active,9.7877,56.1496
+05199,Gludsted Plantage Nv,Pluvio,Active,9.3298,56.0761
+05202,Nørre Snede,Pluvio,Active,9.3768,55.9603
+05205,Vestbirk,Pluvio,Active,9.7022,55.961
+05220,Juelsminde,Pluvio,Active,9.9962,55.7102
+05225,Hesselballe,Pluvio,Active,9.5533,55.8314
+05269,Blåhøj Kirkeby,Pluvio,Active,9.0163,55.8528
+05272,Brande,Pluvio,Active,9.1168,55.9654
+05276,Voulund Testfelt P,Pluvio,Active,9.1594,56.0372
+05277,Høgild,Pluvio,Active,8.9854,56.0626
+05290,Hvidbjerg,Pluvio,Active,8.5246,56.6489
+05296,Trans,Pluvio,Active,8.1465,56.5032
+05300,Øby,Pluvio,Active,8.1659,56.2604
+05305,Grønbjerg,Pluvio,Active,8.4716,56.1828
+05320,Skovlund,Pluvio,Active,8.6933,55.7246
+05329,Outrup,Pluvio,Active,8.3425,55.7199
+05343,Holsted,Pluvio,Active,8.9036,55.4929
+05345,Ribe Renseanlæg,Pluvio,Active,8.7433,55.3286
+05350,Bredebro,Pluvio,Active,8.8326,55.0561
+05355,Emmerlev Klev,Pluvio,Active,8.6652,54.9872
+05365,Kliplev,Pluvio,Active,9.4092,54.9377
+05375,Nørreløkke,Pluvio,Active,9.6811,55.0646
+05381,Rangstrup,Pluvio,Active,9.2058,55.147
+05384,Vojens Airport,Pluvio,Active,9.292,55.2217
+05395,Hajstrup,Pluvio,Active,9.6684,55.2555
+05400,Båring,Pluvio,Active,9.8949,55.4927
+05406,Tørresø,Pluvio,Active,10.393,55.5815
+05408,H. C. Andersen Airport,Pluvio,Active,10.3305,55.4749
+05435,Bøjden,Pluvio,Active,10.1025,55.0977
+05440,Ulbølle,Pluvio,Active,10.4211,55.0741
+05450,Søndenbro,Pluvio,Active,10.7094,54.7567
+05455,Rudkøbing,Pluvio,Active,10.7234,54.9463
+05469,Rosilde,Pluvio,Active,10.7279,55.3041
+05499,Mulstrup,Pluvio,Active,11.8623,55.4069
+05505,Tåstrup Huse,Pluvio,Active,11.709,55.5633
+05510,Rye,Pluvio,Active,11.238,55.5271
+05529,Havnsø,Pluvio,Active,11.3309,55.7521
+05537,Mørkøv Syd,Pluvio,Active,11.4942,55.6366
+05545,Kollekolle,Pluvio,Active,11.6053,55.8689
+05575,Græsted,Pluvio,Active,12.292,56.0428
+05735,Botanisk Have,Pluvio,Active,12.5742,55.6878
+05880,Møllebjerggård,Pluvio,Active,12.4223,55.2932
+05889,Orup,Pluvio,Active,12.098,55.2075
+05935,Køng,Pluvio,Active,11.8285,55.0983
+05945,Nørreby,Pluvio,Active,11.5336,54.9798
+05960,Nakskov,Pluvio,Active,11.1541,54.826
+05970,Rødbyhavn,Pluvio,Active,11.3515,54.6573
+05981,Bjørup,Pluvio,Active,11.931,54.7793
+05986,Ny Borre,Pluvio,Active,12.4538,54.9922
+05994,Østerlars,Pluvio,Active,14.9683,55.163
+06019,Silstrup,Synop,Active,8.6412,56.93
+06030,Flyvestation Ålborg,Synop,Active,9.8505,57.0963
+06031,Tylstrup,Synop,Active,9.9527,57.1852
+06032,Stenhøj,Synop,Active,10.3349,57.3828
+06039,Galten,Synop,Active,9.9033,56.1618
+06041,Skagen Fyr,Synop,Active,10.6318,57.7363
+06043,Frederikshavn,Synop,Active,10.5157,57.4064
+06049,Hald Vest,Synop,Active,10.0929,56.5604
+06051,Vestervig,Synop,Active,8.3207,56.7637
+06052,Thyborøn,Synop,Active,8.2206,56.705
+06056,Mejrup,Synop,Active,8.6705,56.383
+06058,Hvide Sande,Synop,Active,8.1293,56.0005
+06060,Flyvestation Karup,Synop,Active,9.1138,56.2935
+06065,Ålestrup,Synop,Active,9.482,56.6928
+06068,Isenvad,Synop,Active,9.1811,56.0939
+06069,Foulum,Synop,Active,9.5709,56.4931
+06070,Århus Lufthavn,Synop,Active,10.6254,56.3083
+06071,Fornæs Fyr,Synop,Active,10.9574,56.4435
+06072,Ødum,Synop,Active,10.1272,56.3027
+06073,Sletterhage Fyr,Synop,Active,10.5134,56.0954
+06074,Kirstinesminde Flyveplads,Synop,Active,10.1703,56.1945
+06079,Anholt Fyr,Synop,Active,11.6511,56.736
+06080,Esbjerg Lufthavn,Synop,Active,8.5626,55.5281
+06081,Blåvandshuk Fyr,Synop,Active,8.083,55.5576
+06082,Borris,Synop,Active,8.6242,55.9591
+06088,Nordby,Synop,Active,8.4003,55.4483
+06089,Sædenstrand Fyr,Synop,Active,8.398,55.4956
+06093,Vester Vedsted,Synop,Active,8.6551,55.2908
+06096,Rømø/Juvre,Synop,Active,8.56,55.1908
+06102,HORSENS/BYGHOLM,Synop,Active,9.7872,55.868
+06104,Billund Lufthavn,Synop,Active,9.1674,55.7379
+06108,Kolding Lufthavn,Synop,Active,9.3338,55.4376
+06109,Askov,Synop,Active,9.1124,55.4715
+06110,Flyvestation Skrydstrup,Synop,Active,9.2634,55.2251
+06111,Bågø Fyr,Synop,Active,9.7994,55.2976
+06116,Store Jyndevad,Synop,Active,9.123,54.8987
+06118,Sønderborg Lufthavn,Synop,Active,9.793,54.9616
+06119,Kegnæs Fyr,Synop,Active,9.988,54.8529
+06120,Odense Lufthavn,Synop,Active,10.3297,55.4735
+06123,Tvingsbjerg Fyr,Synop,Active,9.8928,55.3106
+06124,Sydfyns Flyveplads,Synop,Active,10.5686,55.0142
+06126,Årslev,Synop,Active,10.4398,55.3088
+06132,Tranebjerg Øst,Synop,Active,10.6217,55.8315
+06134,Tranebjerg Syd,Synop,Active,10.5839,55.811
+06135,Flakkebjerg,Synop,Active,11.3879,55.3224
+06136,Tystofte,Synop,Active,11.3285,55.2465
+06138,Langø,Synop,Active,10.9939,54.8205
+06141,Abed,Synop,Active,11.3292,54.8275
+06147,Gedser Rev Fyrskib,Synop,Active,12.1791,54.4536
+06149,Gedser Fyr,Synop,Active,11.964,54.5639
+06151,Omø Fyr,Synop,Active,11.1339,55.1598
+06154,Brandelev,Synop,Active,11.8605,55.2075
+06156,Holbæk,Synop,Active,11.7088,55.7154
+06159,Røsnæs Fyr,Synop,Active,10.8691,55.7436
+06168,Nakkehoved Fyr,Synop,Active,12.3429,56.1193
+06169,Gniben,Synop,Active,11.2805,56.0067
+06170,Roskilde Lufthavn,Synop,Active,12.1366,55.5867
+06174,Køge,Synop,Active,12.1913,55.4634
+06180,Københavns Lufthavn,Synop,Active,12.6455,55.614
+06181,Jægersborg,Synop,Active,12.5263,55.7664
+06186,Landbohøjskolen,Synop,Active,12.5403,55.6814
+06187,Københavns Toldbod,Synop,Active,12.5985,55.6886
+06188,Sjælsmark,Synop,Active,12.4121,55.8764
+06190,Bornholms Lufthavn,Synop,Active,14.7494,55.0677
+06191,Christiansø Fyr,Synop,Active,15.1875,55.3218
+06193,Hammer Odde Fyr,Synop,Active,14.7726,55.2981
+06197,Nexø Vest,Synop,Active,15.0953,55.0557
